@@ -5,7 +5,8 @@ import Typography from '@mui/material/Typography'
 export const CardStyled = styled(Card)`
     padding: 10px !important;
     border-radius: 4px;
-    min-width: 600px;
+    width: 100%;
+    max-width: 600px;
     background-color: white;
     box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
 `;

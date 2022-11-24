@@ -75,7 +75,8 @@ const EditForm = ({id, modalType}) => {
 
     return (
         <Form onSubmit={() => handleSubmit()}>
-            <Input 
+            <Input
+                isRequired={true}
                 isError={inputsErrors.name}
                 title=' Name:'
                 type='text'
@@ -84,7 +85,8 @@ const EditForm = ({id, modalType}) => {
                 typeData='name'
                 errorMessage='Name length less than 2'
             />
-            <Input 
+            <Input
+                isRequired={true}
                 isError={inputsErrors.email}
                 title='Email:'
                 type='email'

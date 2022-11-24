@@ -1,13 +1,14 @@
 import {InputWrapper, InputStyled, Label, Error} from './InputStyles'
 
-const Input = ({isError, title, type, value, handleOnChange, errorMessage, typeData}) => {
+const Input = ({isError, title, type, value, handleOnChange, errorMessage, typeData, isRequired}) => {
 
     return (
         <InputWrapper>
             <Label>
                 {title}
             </Label>
-            <InputStyled 
+            <InputStyled
+                required={isRequired}
                 type={type} 
                 value={value} 
                 onChange={(e) => handleOnChange(e.target.value, typeData)}
